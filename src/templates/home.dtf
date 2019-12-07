@@ -1,0 +1,9 @@
+   <h3>{%=d.title%}</h3>
+        <p>Released under the
+        <a href="{%=d.license.url%}">{%=d.license.name%}</a>.</p>
+        <h4>Features</h4>
+        <ul>
+        {% for (var i=0; i<d.features.length; i++) { %}
+            <li>{%=d.features[i]%}</li>
+        {% } %}
+        </ul>

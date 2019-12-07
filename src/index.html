@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pure Cart</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="../dist/bundle.css">
+    <script src="./javascript/app-route.js"></script>
+    <script src="./javascript/dtl-engine.js"></script>
+    <script src="./javascript/context-manager.js"></script>
+</head>
+<body onload="bootstrapApp()">
+    <div class="header" data-dtl="header"> </div>
+    <div class="sidebar">
+        <ul>
+            <li data-link="home">Home</li>
+            <li data-link="products">Products</li>
+            <li data-link="cart">Cart</li>
+        </ul>
+    </div>
+    <div class="content">
+        <route-ui id="ui-placeHolder"></route-ui>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
